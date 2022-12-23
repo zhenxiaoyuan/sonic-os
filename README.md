@@ -1,5 +1,7 @@
 # Sonic OS
 
+![Sonic OS](logo.png)
+
 ## Learning to write a little OS in Rust.
 
 ### Reference
