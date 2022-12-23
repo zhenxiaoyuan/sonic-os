@@ -1,0 +1,15 @@
+[source.crates-io]
+replace-with = 'tuna'
+
+[source.tuna]
+registry = "https://mirrors.tuna.tsinghua.edu.cn/git/crates.io-index.git"
+
+[unstable]
+build-std-features = ["compiler-builtins-mem"]
+build-std = ["core", "compiler_builtins"]
+
+[build]
+target = "x86_64-sonic_os.json"
+
+[target.'cfg(target_os = "sonic")']
+runner = "bootimage runner"
